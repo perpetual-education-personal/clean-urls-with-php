@@ -1,0 +1,9 @@
+# Notes
+# ([0-9a-zA-Z_-]+)
+
+
+# Turn it on
+RewriteEngine On
+
+# ?page=page-name
+RewriteRule ^/([a-z]*)$ ./index.php?page=$1
