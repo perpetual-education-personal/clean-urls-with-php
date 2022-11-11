@@ -1,8 +1,7 @@
 <?php
 include('functions.php');
 
-// router
-
+// quick router
 $page = 'home';
 if ( isset($_GET['page']) ) {
 	$page = $_GET['page'];
@@ -23,4 +22,3 @@ function getPageTemplate($page) {
 }
 
 getPageTemplate($page);
-

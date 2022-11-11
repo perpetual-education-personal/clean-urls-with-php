@@ -1,0 +1,12 @@
+
+# Turn it on
+RewriteEngine On
+
+# /
+RewriteRule ^/ ./index.php
+
+# ?page=page-name
+RewriteRule ^([a-z]*)$ ./index.php?page=$1
+
+# ?page=project&slug=project-slug
+RewriteRule ^projects/([a-z-_]*)$ ./index.php?page=project&slug=$1
