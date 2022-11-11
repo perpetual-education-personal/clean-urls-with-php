@@ -17,3 +17,8 @@ RewriteRule ^projects/([0-9a-zA-Z_-]+) ./index.php?page=project&slug=$1 [NC, L]
 #                                   + undetermined string length
 #                                    )$ would note that it's the end of the URL
 # regular expressions...
+
+
+# https://www.danielmorell.com/guides/htaccess-seo/basics/dont-use-htaccess-unless-you-must
+# hmmmm ^
+# 
