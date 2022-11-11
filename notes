@@ -1,6 +1,6 @@
 # Notes
-# ([0-9a-zA-Z_-]+)
-
+# ([a-z]*)$  vs  ([0-9a-zA-Z_-]+)
+# now sure how star plays in
 
 # Turn it on
 RewriteEngine On
@@ -10,7 +10,7 @@ RewriteRule ^([0-9a-zA-Z_-]+) ./index.php?page=$1 [NC, L]
 
 # ?page=project&slug=project-name
 RewriteRule ^projects/([0-9a-zA-Z_-]+) ./index.php?page=project&slug=$1 [NC, L]
-
+#                                                                       this breaks it
 #                         placeholder
 #            what we want/what's allowed
 #                       0-9 a-z A-Z _ - etc... 
@@ -20,5 +20,5 @@ RewriteRule ^projects/([0-9a-zA-Z_-]+) ./index.php?page=project&slug=$1 [NC, L]
 
 
 # https://www.danielmorell.com/guides/htaccess-seo/basics/dont-use-htaccess-unless-you-must
-# hmmmm ^
+# hmmmm ^ we should look up how to utilize httpd.conf
 # 
