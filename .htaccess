@@ -3,10 +3,20 @@
 RewriteEngine On
 
 # /
-RewriteRule ^/ ./index.php
+# RewriteRule ^/ index.php
 
 # ?page=page-name
-RewriteRule ^([0-9a-zA-Z_-]+)$ ./index.php?page=$1
+# ?page=about
+# ?page=projects
+
+RewriteRule ^([0-9a-zA-Z_-]+)$ ?page=$1
 
 # ?page=project&slug=project-slug
-RewriteRule ^projects/([0-9a-zA-Z_-]+)$ ./index.php?page=project&slug=$1
+RewriteRule ^projects/([0-9a-zA-Z_-]+)$ ?page=project&slug=$1
+
+
+# issues: having trouble with these!
+
+# /projects/project-slug
+# /layouts/layout-slug
+# /exercises/exercise-slug
